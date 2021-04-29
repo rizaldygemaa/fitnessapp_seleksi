@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_sports_news">
+
+    <fragment
+        android:id="@+id/navigation_sports_news"
+        android:name="com.example.tubespbd2021.ui.sports_news.SportsNewsFragment"
+        android:label="Sports News"
+        tools:layout="@layout/fragment_sports_news" />
+
+    <fragment
+        android:id="@+id/navigation_training_scheduler"
+        android:name="com.example.tubespbd2021.ui.scheduler.SchedulerFragment"
+        android:label="Scheduler"
+        tools:layout="@layout/fragment_scheduler" />
+
+    <fragment
+        android:id="@+id/navigation_training_tracker"
+        android:name="com.example.tubespbd2021.ui.tracker.TrackerFragment"
+        android:label="Tracker"
+        tools:layout="@layout/fragment_tracker" />
+
+    <fragment
+        android:id="@+id/navigation_training_history"
+        android:name="com.example.tubespbd2021.ui.history.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
+</navigation>
